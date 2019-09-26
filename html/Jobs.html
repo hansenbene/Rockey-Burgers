@@ -43,6 +43,7 @@
                 <h3><label for="city">City: </label></h3>
                 <input type="text" id="city" name="city"/>
             </div>
+            <div>
                 <h3><label for="state">State: </label></h3>
                 <select id="state" name="state">
                     <option value="null" disabled selected>...</option>
@@ -99,16 +100,45 @@
                     <option value="WY">Wyoming</option>
                 </select>
             </div>
-        Zip Code: Text Field
-        Phone: Text Field
-        Email: Email Field
+            <div>
+                <h3><label for="zip">Zip Code: </label></h3>
+                <input type="text" id="zip" name="zip"/>
+            </div>
+            <div>
+                <h3><label for="phone">Phone: </label></h3>
+                <input type="text" id="phone" name="phone"/>
+            </div>
+            <div>
+                <h3><label for="email">Email: </label></h3>
+                <input type="email" id="email" name="email"/>
+            </div>
 
-        Work History
-        Tell us about your last two jobs. What did you do? Who did you work for? How long were you there? (2 multi-line fields)
-        Availability
-        Daytime: (checkbox)
-        Evenings: (checkbox) Anytime: (checkbox)
-        What makes you a great fit? (1 multi-line field)
+        <div>
+            <h3>Work History: </h3>
+            <div>
+                Tell us about your last two jobs. What did you do? Who did you work for? How long were you there? (2 multi-line fields)
+            </div>
+            <lable for="workHist1">Job 1</lable>
+            <textarea id="workHist1" name="workHist1"></textarea>
+            <lable for="workHist2">Job 2</lable>
+            <textarea id="workHist2" name="workHist2"></textarea>
+        </div>
+        <div>
+            <h3>Availability</h3>
+            <div>
+                Daytime: <input type="checkbox" name="avail" value="day"/>
+            </div>
+            <div>
+                Evenings: <input type="checkbox" name="avail" value="evening"/>
+            </div>
+            <div>
+                Anytime: <input type="checkbox" name="avail" value="anytime"/>
+            </div>
+        </div>
+            <div>
+                <label for="exInfo">What makes you a great fit?</label>
+                <textarea id="exInfo" name="exInfo"></textarea>
+            </div>
         </form>
     </div>
     <div class="footer">
