@@ -10,18 +10,21 @@ body {
 
 }
 
+
+/*header*/
 .header {
+    font-family: "Bungee Inline";
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: saddlebrown;
+    background-color: #8b4513;
     height: 80px;
     width: calc(100% - 20px);
     padding: 0 10px 0 10px;
 }
 
 .subheader {
-    background-color: burlywood;
+    background-color: #f1a536;
     height: 50px;
     width: 100%;
     display: flex;
@@ -41,32 +44,77 @@ body {
     display: flex;
     justify-content: center;
     font-size: 1.2em;
+    background-color: #8b4513;
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: #000000;
 }
 
 nav a {
     margin: 10px;
     padding: 10px;
+    border-radius: 5px;
 }
 
+a:hover {
+    color: #f1a536;
+}
+
+.active {
+    background-color: #f1a536;
+}
+
+
+/*main content*/
 .hero-img {
     height: 500px;
     background-image: url("../images/burger-hero.jpg");
     background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding-bottom: 40px;
 }
 
 .content {
-    padding: 0px 20px 20px 20px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.jumboButtons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.jumboButtons div {
+    display: flex;
+    justify-content: center;
+    width: 33%;
+    padding: 10px;
+    margin: 20px;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    background-color: #f1a536;
+}
+
+.jumboButtons a:hover, .active:hover {
+    color: #ffffff!important;
+}
+
+.specialText {
+    font-family: "Bungee Inline";
+    font-weight: lighter;
 }
 
 .blurb {
     margin-top: 10px;
 }
 
+
+/*footer*/
 .footer {
     height: 280px;
     display: flex;
@@ -74,6 +122,11 @@ nav a {
     justify-content: center;
     align-items: center;
 }
+
+.footer .links {
+    width: 100%;
+}
+
 .subLogo img {
     height: 80px;
 }
@@ -81,7 +134,49 @@ nav a {
 .footerContent {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 200px;
     width: 100%;
-    background-color: saddlebrown;
+    padding-bottom: 20px;
+    background-color: #8b4513;
+}
+
+#social {
+    font-size: 3em;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#social a {
+    padding: 10px;
+}
+
+.formCont {
+    display: flex;
+    align-content: center;
+    width: 300px;
+}
+
+#subscribe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+}
+
+.footerForm {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    width: 100%;
+    padding: 2px;
+}
+
+#subscribe div:nth-of-type(4) {
+    flex-direction: row-reverse;
+}
+#submit {
+    justify-content: center;
+    width: 40%;
 }
