@@ -77,6 +77,8 @@ a:hover {
 
 .content {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 100%;
     padding: 20px 0 ;
@@ -119,7 +121,7 @@ a:hover {
     padding: 0 20px;
 }
 
-.subBlurbHead {
+.sectionDivider {
     text-align: center;
     background-color: #9b2110;
     padding: 20px 20px;
@@ -145,6 +147,54 @@ a:hover {
     width: 50%;
     display: flex;
     flex-direction: column;
+}
+
+.mainFood {
+    padding-bottom: 20px;
+}
+
+.mainFood, .extraFood {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.menuItem, .food {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1a536;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.mainFood h2, .extraFood h2 {
+    text-align: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.locationTable {
+    text-align: center;
+}
+
+td {
+    padding: 20px;
+}
+
+#jobs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hidden {
+    padding: 10px;
+    margin: 20px;
+    background-color: #f1a536;
+    border-radius: 5px;
 }
 
 
