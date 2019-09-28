@@ -109,8 +109,29 @@ a:hover {
     font-weight: lighter;
 }
 
+.blurbContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    padding: 10px;
+    width: calc(100% - 10px);
+}
+
+.inner {
+    display: flex;
+    width: 100%;
+}
+
 .blurb {
-    margin-top: 10px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+.column {
+    width: 50%;
 }
 
 
@@ -178,5 +199,5 @@ a:hover {
 }
 #submit {
     justify-content: center;
-    width: 40%;
+    width: 30%;
 }
